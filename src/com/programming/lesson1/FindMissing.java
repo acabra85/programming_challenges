@@ -11,16 +11,16 @@ public class FindMissing {
 
 
     /**
-     * The array A contains integers in the range [1..(N + 1)], which means that exactly one element is missing
+     * The array input contains integers in the range [1..(N + 1)], which means that exactly one element is missing
      * Constraints: Complexity in time O(N) and space execution O(1)
-     * @param A zero-indexed array A consisting of N different integers
+     * @param input zero-indexed array input consisting of N different integers
      * @return find the missing element in the sequence
      */
-    public int solution(final int[] A) {
-        String val1 = (A.length+1)+"";
+    public int solution(final int[] input) {
+        String val1 = (input.length+1)+"";
         BigInteger sum = sumOfNumbers(new BigInteger(val1));
-        for(int i=0; i<A.length; i++) {
-            sum = sum.subtract(new BigInteger(A[i]+""));
+        for(int i=0; i<input.length; i++) {
+            sum = sum.subtract(new BigInteger(input[i]+""));
         }
         return sum.intValue();
     }

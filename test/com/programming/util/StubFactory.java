@@ -27,4 +27,15 @@ public class StubFactory {
                 return E;
         }
     }
+
+    public static int[] getArrayLesson2CheckingPermutations(int code) {
+        switch (code) {
+            case 0:
+                int A[] = {4,1,3,2};
+                return A;
+            default:
+                int E[] = {1,2,5,6,3,4,8,2,5};
+                return E;
+        }
+    }
 }

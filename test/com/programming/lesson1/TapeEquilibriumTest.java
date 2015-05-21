@@ -12,7 +12,7 @@ import static junit.framework.Assert.assertEquals;
 public class TapeEquilibriumTest {
 
     @Test
-    public void tapeEquilibriumSolutionTest() {
+    public void solutionTest() {
         assertEquals(1,  new TapeEquilibrium().solution(StubFactory.getArrayLesson1TapeEquilibrium(0)));
         assertEquals(2,  new TapeEquilibrium().solution(StubFactory.getArrayLesson1TapeEquilibrium(2)));
     }
